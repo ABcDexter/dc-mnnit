@@ -12,6 +12,12 @@ Site for monitoring active DC hubs, proxies and file requests (172.31.9.69)
 ## Special Instructions:
 - Create file `dbdetails.php` containing constants `DB_HOST`,`DB_USER`,`DB_PASS`
 - Import database `dcp.sql`
+- Add to crontab: 
+```
+*/2 * * * * sh /var/www/html/dc/updatedc.sh
+*/15 * * * * sh /var/www/html/dc/updatespeed.sh
+```
+
 
 
 
